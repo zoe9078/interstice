@@ -1,6 +1,3 @@
-<!--
-@author jeromeetienne / https://github.com/jeromeetienne
---> 
 <!DOCTYPE html>
 <html>
     <script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
@@ -35,12 +32,12 @@
             <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
             <a-entity
             position="0 0 0"
-            scale=".5 .5 .5"
-            rotation="90 0 0"
-            gltf-model src="../models/girlanim.gltf"
+            scale="1 1 1"
+            rotation="0 0 0"
+            gltf-model="../models/mirrorcopy.gltf"
             class = "clickable"
             gesture-handler
-            animation-mixer
+            animatio-mixer
             ></a-entity>
         </a-marker>
         <a-entity camera></a-entity>
