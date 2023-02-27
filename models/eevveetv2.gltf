@@ -20,7 +20,7 @@
                         0.32637572288513184,
                         0.32637572288513184
                     ],
-                    "intensity" : 1.9973944143777014,
+                    "intensity" : 0.2785211504108169,
                     "spot" : {
                         "innerConeAngle" : 1.2801634579534849,
                         "outerConeAngle" : 1.5060746669769287
@@ -228,25 +228,13 @@
         },
         {
             "doubleSided" : true,
-            "extensions" : {
-                "KHR_materials_specular" : {
-                    "specularColorFactor" : [
-                        0,
-                        0,
-                        0
-                    ]
-                },
-                "KHR_materials_ior" : {
-                    "ior" : 0
-                }
-            },
-            "name" : "Material.001",
+            "name" : "Material.006",
             "pbrMetallicRoughness" : {
                 "baseColorTexture" : {
                     "index" : 1
                 },
                 "metallicFactor" : 0,
-                "roughnessFactor" : 0
+                "roughnessFactor" : 0.5
             }
         },
         {
