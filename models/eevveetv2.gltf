@@ -6,8 +6,7 @@
     "extensionsUsed" : [
         "KHR_materials_specular",
         "KHR_materials_ior",
-        "KHR_lights_punctual",
-        "KHR_materials_clearcoat"
+        "KHR_lights_punctual"
     ],
     "extensionsRequired" : [
         "KHR_lights_punctual"
@@ -17,11 +16,11 @@
             "lights" : [
                 {
                     "color" : [
-                        0.2462013065814972,
-                        0.3033178150653839,
-                        1
+                        0.04872743785381317,
+                        0.01749177649617195,
+                        0.0946255624294281
                     ],
-                    "intensity" : 0.7957747154594768,
+                    "intensity" : 1.050422609228311,
                     "spot" : {
                         "innerConeAngle" : 1.2801634579534849,
                         "outerConeAngle" : 1.5060746669769287
@@ -31,11 +30,11 @@
                 },
                 {
                     "color" : [
-                        0.08023110777139664,
-                        0.06847796589136124,
-                        1
+                        0.013261637650430202,
+                        0.011683586984872818,
+                        0.11927595734596252
                     ],
-                    "intensity" : 1.1936620731892151,
+                    "intensity" : 1.5438029176349886,
                     "spot" : {
                         "innerConeAngle" : 1.1327364365301662,
                         "outerConeAngle" : 1.3326311111450195
@@ -57,7 +56,8 @@
                 3,
                 4,
                 5,
-                6
+                6,
+                7
             ]
         }
     ],
@@ -170,6 +170,14 @@
                 -0.11194808781147003,
                 0.005713209509849548
             ]
+        },
+        {
+            "name" : "IrradianceVolume",
+            "scale" : [
+                9.746301651000977,
+                9.746301651000977,
+                9.746301651000977
+            ]
         }
     ],
     "materials" : [
@@ -230,10 +238,6 @@
         {
             "doubleSided" : true,
             "extensions" : {
-                "KHR_materials_clearcoat" : {
-                    "clearcoatFactor" : 0.6181818246841431,
-                    "clearcoatRoughnessFactor" : 0
-                },
                 "KHR_materials_specular" : {
                     "specularColorFactor" : [
                         0,
@@ -248,7 +252,7 @@
             "name" : "Material.001",
             "pbrMetallicRoughness" : {
                 "metallicFactor" : 0,
-                "roughnessFactor" : 0.5
+                "roughnessFactor" : 0
             }
         },
         {
