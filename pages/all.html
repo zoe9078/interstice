@@ -8,6 +8,7 @@
     <body style="margin : 0px; overflow: hidden;">
         <a-scene
          arjs
+         else if( _this.data.preset === 'custom' ){ arProfile.defaultMarkerParameters.type = 'pattern' arProfile.defaultMarkerParameters.patternUrl = _this.data.patternUrl; arProfile.defaultMarkerParameters.markersAreaEnabled = false
          embedded
          renderer="logarithmicDepthBuffer: true;"
          vr-mode-ui="enabled: false"
