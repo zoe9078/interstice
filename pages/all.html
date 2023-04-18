@@ -8,8 +8,6 @@
     <body style="margin : 0px; overflow: hidden;">
         <a-scene
          arjs
-         else if( _this.data.preset === 'custom' ){ arProfile.defaultMarkerParameters.type = 'pattern' arProfile.defaultMarkerParameters.patternUrl = _this.data.patternUrl; arProfile.defaultMarkerParameters.markersAreaEnabled = false
-         embedded
          renderer="logarithmicDepthBuffer: true;"
          vr-mode-ui="enabled: false"
          gesture-detector
@@ -23,10 +21,14 @@
             </a-asset-item>
           </a-assets>
          
-        <a-marker-camera preset='custom' type='pattern' url='../markers/pattern-gallery1.patt'></a-marker-camera>
-
-
-        >
+        <a-marker 
+            preset="custom"
+            type="pattern"
+            url="../markers/pattern-gallery1.patt"
+            raycaster="objects: .clickable"
+            emitevents="true"
+            cursor="fuse: false; rayOrigin: mouse;"
+          >
             <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
             <a-entity
             intensity = ".2"
@@ -38,6 +40,8 @@
             gesture-handler
             animatio-mixer
             ></a-entity>
+        </a-marker>
+
         </a-scene>
     </body>
 </html>
