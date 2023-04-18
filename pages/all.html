@@ -32,15 +32,21 @@
             <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
             <a-entity
             position="0 0 0"
-            scale=".25 .25 .10"
+            scale=".25 .25 .15"
             rotation="0 0 0"
             gltf-model="../models/testgallery9.gltf"
             class = "clickable"
-            gesture-handler
+            mindar-image-target="targetIndex: 0"
+            gesture-handler = "minScale: 0.5; maxScale: 10" 
             animatio-mixer
-            ></a-entity>
-        </a-marker>
-
+            >
+                <a-plane src="#card" position="0 0 0" height="0.552" width="1" rotation="0 0 0"></a-plane>
+                <a-gltf-model rotation="0 0 0 " position="0 0 0.1" scale="0.005 0.005 0.005" src="#avatarModel"
+                >
+            </a-entity>
+        </a-marker>      
+            
+            
         </a-scene>
     </body>
 </html>
