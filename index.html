@@ -13,13 +13,6 @@
          gesture-detector
          id="scene"
         >
-          <a-assets>
-            <a-asset-item
-              id="luigi"
-              src="https://cdn.glitch.com/06bd98b4-97ee-4c07-a546-fe39ca205034%2Fbowser.glb"
-            >
-            </a-asset-item>
-          </a-assets>
          
         <a-marker 
             preset="custom"
@@ -35,14 +28,14 @@
           >
             <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
             <a-entity
+            intensity = ".2"
             position="0 0 0"
-            scale=".25 .25 .25"
+            scale=".1 .1 .1"
             rotation="0 0 0"
             gltf-model="models/gallerydim.gltf"
             class = "clickable"
-            mindar-image-target="targetIndex: 0"
-            gesture-handler = "minScale: 0.5; maxScale: 10; rotationFactor: 1; locationBased: true;" 
-            animation-mixer
+            gesture-handler
+            animatio-mixer
             >
                 >
             </a-entity>
@@ -62,12 +55,11 @@
             <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
             <a-entity
             position="0 0 0"
-            scale=".5 .5 .5"
+            scale=".25 .25 .25"
             rotation="0 0 0"
-            gltf-model="models/eye.gltf"
+            gltf-model="models/eyeunitless.gltf"
             class = "clickable"
-            mindar-image-target="targetIndex: 0"
-            gesture-handler = "minScale: 0.5; maxScale: 10; rotationFactor: 1; locationBased: true;" 
+            gesture-handler
             animatio-mixer
             >
                 >
@@ -88,12 +80,11 @@
             <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
             <a-entity
             position="0 0 0"
-            scale=".25 .5 1"
+            scale=".25 .25 .25"
             rotation="0 0 0"
-            gltf-model="models/ghostunitlesslowlight.gltf"
+            gltf-model="models/ghostunitless.gltf"
             class = "clickable"
-            mindar-image-target="targetIndex: 0"
-            gesture-handler = "minScale: 0.5; maxScale: 10; rotationFactor: 1; locationBased: true;" 
+            gesture-handler
             animatio-mixer
             >
                 >
@@ -114,12 +105,11 @@
             <!-- we use cors proxy to avoid cross-origin problems ATTENTION! you need to set up your server -->
             <a-entity
             position="0 0 0"
-            scale="4 4 4"
+            scale="1 1 1"
             rotation="0 0 0"
-            gltf-model="models/altarnew.gltf"
+            gltf-model="models/altarwithlight.gltf"
             class = "clickable"
-            mindar-image-target="targetIndex: 0"
-            gesture-handler = "minScale: 0.5; maxScale: 10; rotationFactor: 1; locationBased: true;" 
+            gesture-handler
             animatio-mixer
             >
                 >
@@ -142,17 +132,13 @@
             position="0 0 0"
             scale=".25 .25 .25"
             rotation="0 0 0"
-            gltf-model="models/hand.gltf"
+            gltf-model="models/handunitless.gltf"
             class = "clickable"
-            mindar-image-target="targetIndex: 0"
-            gesture-handler = "minScale: 0.5; maxScale: 10; rotationFactor: 1; locationBased: true;" 
+            gesture-handler
             animatio-mixer
-            >
-                >
-            </a-entity>
+            ></a-entity>
         </a-marker>
-            
-            
+        <a-entity camera></a-entity>
         </a-scene>
     </body>
 </html>
